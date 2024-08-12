@@ -4,7 +4,7 @@ name: Trigger repo2 workflow
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   trigger-repo2:
@@ -16,4 +16,4 @@ jobs:
           -H "Accept: application/vnd.github.v3+json" \
           -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           -d '{"event_type": "triggered_by_repo1"}' \
-          https://api.github.com/repos/<user>/<repo2>/dispatches
+          https://api.github.com/repos/serhii-vasylkiv/repo2/dispatches
