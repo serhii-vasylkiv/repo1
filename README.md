@@ -11,6 +11,6 @@ test merge 91
 - Metadata: Read-only
 - Pull requests: ~~Read and write~~ ➡️ Read-only
 - Secrets: Read-only
-- Webhooks: Read and write
+- Webhooks: ~~Read and write~~ ➡️ Read-only
 - Workflows: Read and write
 1
