@@ -5,7 +5,7 @@ test merge 91
 
 - Contents: Read and write
 - Metadata: Read-only
-- ~~Pull requests: Read-only~~
-- Secrets: Read-only
+- ~~Secrets: Read-only~~
 - Webhooks: Read-only
 - Workflows: Read and write1
+1
