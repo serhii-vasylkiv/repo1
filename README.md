@@ -3,7 +3,6 @@ test merge 91
 
 
 
-- Contents: Read and write
+- Contents: ~~Read and write~~ Read-only
 - Metadata: Read-only
-- ~~Workflows: Read and write~~
 1
