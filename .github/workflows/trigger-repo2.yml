@@ -1,6 +1,8 @@
 # .github/workflows/trigger-repo2.yml
 name: Trigger repo2 workflow
 
+permissions: write-all
+
 on:
   push:
     branches:
