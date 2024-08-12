@@ -9,8 +9,11 @@ on:
 jobs:
   trigger-repo2:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    permissions: write-all
+    # permissions:
+      # contents: write
+      # pull-requests: write
+      # repository-projects: write
     steps:
     - name: Trigger workflow in repo2
       run: |
