@@ -4,7 +4,7 @@ test merge 91
 
 
 - ~~Actions: Read-only~~
-- Commit statuses: Read-only
+- ~~Commit statuses: Read-only~~
 - Contents: Read and write
 - Deployments: Read-only
 - Merge queues: Read-only
@@ -12,7 +12,4 @@ test merge 91
 - Pull requests: Read-only
 - Secrets: Read-only
 - Webhooks: Read-only
-- Workflows: Read and write
-1
-1
-1
+- Workflows: Read and write1
