@@ -1,0 +1,19 @@
+# .github/workflows/trigger-repo2.yml
+name: Trigger repo2 workflow
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  trigger-repo2:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Trigger workflow in repo2
+      run: |
+        curl -X POST \
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -d '{"event_type": "triggered_by_repo1"}' \
+          https://api.github.com/repos/<user>/<repo2>/dispatches
