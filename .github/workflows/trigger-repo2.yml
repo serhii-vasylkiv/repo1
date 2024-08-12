@@ -1,8 +1,6 @@
 # .github/workflows/trigger-repo2.yml
 name: Trigger repo2 workflow
 
-permissions: write-all
-
 on:
   push:
     branches:
@@ -11,6 +9,10 @@ on:
 jobs:
   trigger-repo2:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      repository-projects: write
     steps:
     - name: Trigger workflow in repo2
       run: |
