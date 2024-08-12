@@ -9,7 +9,7 @@ on:
 jobs:
   trigger-repo2:
     runs-on: ubuntu-latest
-    permissions: write-all
+    # permissions: write-all
     # permissions:
       # contents: write
       # pull-requests: write
